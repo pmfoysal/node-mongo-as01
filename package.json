@@ -1,0 +1,29 @@
+{
+   "name": "node-mongo-as01",
+   "version": "1.0.0",
+   "description": "NodeJS &amp; MongoDB Advanced Crash Course - Assignment 01",
+   "readme": "README.md",
+   "license": "ISC",
+   "author": {
+      "name": "Foysal Ahmmed",
+      "email": "pmfoysal@gmail.com",
+      "url": "https://pmfoysal.netlify.app"
+   },
+   "main": "index.js",
+   "scripts": {
+      "start": "node index.js",
+      "dev": "nodemon index.js"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git@github.com-pmfoysal:pmfoysal/node-mongo-as01.git"
+   },
+   "keywords": [
+      "nodejs",
+      "mongodb",
+      "random",
+      "user",
+      "random-user",
+      "crud"
+   ]
+}
