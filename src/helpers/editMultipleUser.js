@@ -17,7 +17,6 @@ async function editMultipleUser(data) {
 
    if (invalids.length) {
       return {
-         valid: false,
          error: {
             type: 'ID Not Matched!',
             message: 'The following data ids not found in the database.',
@@ -27,7 +26,6 @@ async function editMultipleUser(data) {
       };
    }
    return {
-      valid: true,
       error: null,
       data: await editToDB(Object.values(valids), users),
    };
