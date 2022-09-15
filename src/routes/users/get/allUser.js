@@ -1,13 +1,8 @@
-const path = require('path');
-const fs = require('fs/promises');
+const getAllUsers = require('../../../helpers/getAllUsers');
 
 async function allUser(req, res) {
-   try {
-      const users = await fs.readFile(path.resolve(__dirname, '../../../database/users.json'), { encoding: 'utf-8' });
-      res.send(users);
-   } catch (error) {
-      res.send([]);
-   }
+   const users = await getAllUsers();
+   res.send(users);
 }
 
 module.exports = allUser;
