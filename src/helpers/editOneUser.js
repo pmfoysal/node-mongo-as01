@@ -28,7 +28,7 @@ async function editToDB(edited, data) {
       return edited;
    } catch (error) {
       return {
-         message: 'User cannot be added at this moment!',
+         message: 'User cannot be updated at this moment!',
       };
    }
 }
